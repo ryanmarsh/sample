@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    kubernetes.io/tls-acme: "true"
+  name: wp-prod
+spec:
+  rules:
+  - host: c1ed622bc.sample.com
+    http:
+      paths:
+      - backend:
+          serviceName: wordpress
+          servicePort: 80
+        path: /
+  tls:
+  - hosts:
+    - c1ed622bc.sample.com
+    secretName: api-tls
