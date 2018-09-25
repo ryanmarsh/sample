@@ -23,4 +23,4 @@ Helm works with gitlabs or jenkins just setting up a git-ci.yaml file.
 For further CI/CD using gitlabs Auto DevOps can streamline the process. 
 https://docs.gitlab.com/ee/topics/autodevops/
 
-These two tools combined or seperate should be able to manage the yaml files no matter how numerous. 
+These two tools combined or separate should be able to manage the yaml files no matter how numerous. 
